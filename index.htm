@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Artbook – Linh Sơn Tiên Thạch Tự</title>
+<style>
+:root{--bg:#1c1410;--fg:#eedcc7;box-sizing:border-box}
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]){--bg:#1c1410;--fg:#eedcc7}}
+html,body{margin:0;height:100%;background:var(--bg);color:var(--fg);font-family:Georgia,serif;overflow:hidden}
+body{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:env(safe-area-inset-top,0px) 0 env(safe-area-inset-bottom,0px)}
+#wrap{width:100%;flex:1;display:flex;align-items:center;justify-content:center;min-height:0}
+#book{box-shadow:0 20px 60px rgba(0,0,0,.6)}
+.page img{width:100%;height:100%;display:block;object-fit:cover;pointer-events:none;user-select:none}
+.page{background:#fff}
+#bar{display:flex;gap:16px;align-items:center;padding:10px 0 14px;font-size:14px}
+#bar button{background:none;border:1px solid #eedcc766;color:var(--fg);width:38px;height:38px;border-radius:50%;font-size:18px;cursor:pointer}
+#bar button:hover{background:#eedcc722}
+</style></head><body>
+<div id="wrap"><div id="book"><div class="page"><img src="pages/00.jpg" alt="Trang 0" draggable="false"></div>
+<div class="page"><img src="pages/01.jpg" alt="Trang 1" draggable="false"></div>
+<div class="page"><img src="pages/02.jpg" alt="Trang 2" draggable="false"></div>
+<div class="page"><img src="pages/03.jpg" alt="Trang 3" draggable="false"></div>
+<div class="page"><img src="pages/04.jpg" alt="Trang 4" draggable="false"></div>
+<div class="page"><img src="pages/05.jpg" alt="Trang 5" draggable="false"></div>
+<div class="page"><img src="pages/06.jpg" alt="Trang 6" draggable="false"></div>
+<div class="page"><img src="pages/07.jpg" alt="Trang 7" draggable="false"></div>
+<div class="page"><img src="pages/08.jpg" alt="Trang 8" draggable="false"></div>
+<div class="page"><img src="pages/09.jpg" alt="Trang 9" draggable="false"></div>
+<div class="page"><img src="pages/10.jpg" alt="Trang 10" draggable="false"></div>
+<div class="page"><img src="pages/11.jpg" alt="Trang 11" draggable="false"></div>
+<div class="page"><img src="pages/12.jpg" alt="Trang 12" draggable="false"></div>
+<div class="page"><img src="pages/13.jpg" alt="Trang 13" draggable="false"></div>
+<div class="page"><img src="pages/14.jpg" alt="Trang 14" draggable="false"></div>
+<div class="page"><img src="pages/15.jpg" alt="Trang 15" draggable="false"></div>
+<div class="page"><img src="pages/16.jpg" alt="Trang 16" draggable="false"></div>
+<div class="page"><img src="pages/17.jpg" alt="Trang 17" draggable="false"></div>
+<div class="page"><img src="pages/18.jpg" alt="Trang 18" draggable="false"></div>
+<div class="page"><img src="pages/19.jpg" alt="Trang 19" draggable="false"></div>
+<div class="page"><img src="pages/20.jpg" alt="Trang 20" draggable="false"></div>
+<div class="page"><img src="pages/21.jpg" alt="Trang 21" draggable="false"></div>
+<div class="page"><img src="pages/22.jpg" alt="Trang 22" draggable="false"></div>
+<div class="page"><img src="pages/23.jpg" alt="Trang 23" draggable="false"></div>
+<div class="page"><img src="pages/24.jpg" alt="Trang 24" draggable="false"></div>
+<div class="page"><img src="pages/25.jpg" alt="Trang 25" draggable="false"></div>
+<div class="page"><img src="pages/26.jpg" alt="Trang 26" draggable="false"></div>
+<div class="page"><img src="pages/27.jpg" alt="Trang 27" draggable="false"></div>
+<div class="page"><img src="pages/28.jpg" alt="Trang 28" draggable="false"></div>
+<div class="page"><img src="pages/29.jpg" alt="Trang 29" draggable="false"></div>
+<div class="page"><img src="pages/30.jpg" alt="Trang 30" draggable="false"></div>
+<div class="page"><img src="pages/31.jpg" alt="Trang 31" draggable="false"></div>
+<div class="page"><img src="pages/32.jpg" alt="Trang 32" draggable="false"></div>
+<div class="page"><img src="pages/33.jpg" alt="Trang 33" draggable="false"></div>
+<div class="page"><img src="pages/34.jpg" alt="Trang 34" draggable="false"></div>
+<div class="page"><img src="pages/35.jpg" alt="Trang 35" draggable="false"></div>
+<div class="page"><img src="pages/36.jpg" alt="Trang 36" draggable="false"></div>
+<div class="page"><img src="pages/37.jpg" alt="Trang 37" draggable="false"></div>
+<div class="page"><img src="pages/38.jpg" alt="Trang 38" draggable="false"></div>
+<div class="page"><img src="pages/39.jpg" alt="Trang 39" draggable="false"></div>
+<div class="page"><img src="pages/40.jpg" alt="Trang 40" draggable="false"></div></div></div>
+<div id="bar"><button id="prev" aria-label="Trang trước">‹</button><span id="info">1 / 41</span><button id="next" aria-label="Trang sau">›</button></div>
+<script src="https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/js/page-flip.browser.js"></script>
+<script>
+var pf=new St.PageFlip(document.getElementById('book'),{
+ width:910,height:910,size:'stretch',minWidth:260,maxWidth:1000,minHeight:260,maxHeight:1000,
+ showCover:true,usePortrait:true,maxShadowOpacity:.5,mobileScrollSupport:false,drawShadow:true,flippingTime:800});
+pf.loadFromHTML(document.querySelectorAll('.page'));
+var info=document.getElementById('info'),T=pf.getPageCount();
+function up(){info.textContent=(pf.getCurrentPageIndex()+1)+' / '+T}
+pf.on('flip',up);
+document.getElementById('prev').onclick=function(){pf.flipPrev()};
+document.getElementById('next').onclick=function(){pf.flipNext()};
+addEventListener('keydown',function(e){if(e.key==='ArrowLeft')pf.flipPrev();if(e.key==='ArrowRight')pf.flipNext()});
+</script></body></html>
